@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Оновлений шрифт */
+    background-color: #ecf3ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(77deg, #b3d1f3, #203267);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.card {
+    background: linear-gradient(77deg, rgb(179 209 243 / 0.64), rgb(32 50 103 / 0.65));
+    margin-bottom: 20px;
+    color: #000000;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    /* Додаємо плавність для анімації (0.3 секунди) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Створюємо ефект при наведенні мишки */
+.card:hover {
+    transform: translateY(-8px); /* Картка плавно піднімається на 8 пікселів вгору */
+    box-shadow: 0 12px 24px rgb(32 50 103 / 0.71); /* З'являється більша і насиченіша тінь у тон твого градієнта */
+}
+.card p,
+.card li,
+.tech-table td {
+    font-weight: 550;
+    color: #203267;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #203267;
+    font-weight: 700;
+}
+
+.features-list {
+    padding-left: 20px;
+}
+
+.features-list li {
+    margin-bottom: 8px;
+}
+
+.note-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: rgb(32 50 103 / 0.86);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600; /* Додано жирність */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #071732;
+}
+
+.message {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0f2fe;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.note-text {
+    margin-right: 10px;
+}
+
+.delete-button {
+    padding: 8px 12px;
+    background-color: rgb(32 50 103 / 0.86);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #071732;
+}
+
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tech-table th,
+.tech-table td {
+    border: 1px solid rgb(48 68 135 / 0.86);
+    padding: 12px;
+    text-align: left;
+}
+
+.tech-table th {
+    background-color: rgb(32 50 103 / 0.86);
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    background: linear-gradient(77deg, #b3d1f3, #203267);
+    color: #000000;
+    padding: 18px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+/* Налаштування розміру логотипу */
+.main-logo {
+    width: 350px; /* твій розмір */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Робить логотип окремим блоком */
+    margin: 0 auto 10px auto; /* 0 зверху, auto по боках (центрує), 10px знизу */
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 600px) {
+    .header {
+        padding: 28px 0;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .note-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete-button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .tech-table th,
+    .tech-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
