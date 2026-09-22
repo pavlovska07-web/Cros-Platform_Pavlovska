@@ -50,10 +50,9 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Створюємо ефект при наведенні мишки */
 .card:hover {
-    transform: translateY(-8px); /* Картка плавно піднімається на 8 пікселів вгору */
-    box-shadow: 0 12px 24px rgb(32 50 103 / 0.71); /* З'являється більша і насиченіша тінь у тон твого градієнта */
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgb(32 50 103 / 0.71);
 }
 .card p,
 .card li,
@@ -93,7 +92,7 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 16px;
-    font-weight: 600; /* Додано жирність */
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -167,16 +166,14 @@ body {
 
 }
 
-/* Налаштування розміру логотипу */
 .main-logo {
-    width: 350px; /* твій розмір */
+    width: 350px;
     max-width: 100%;
     height: auto;
-    display: block; /* Робить логотип окремим блоком */
-    margin: 0 auto 10px auto; /* 0 зверху, auto по боках (центрує), 10px знизу */
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
-/* Адаптивність для мобільних пристроїв */
 @media (max-width: 600px) {
     .header {
         padding: 28px 0;

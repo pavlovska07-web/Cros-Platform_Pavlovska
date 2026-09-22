@@ -10,21 +10,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Хедер сайту -->
 <header class="header">
     <div class="container">
-        <!-- Вставляємо логотип замість h1 -->
         <div class="main-logo">
-        <img src="../Group%201.svg" alt="FitConnect Лого" class="main-logo">
+        <img src="Group 1.svg" alt="FitConnect Лого" class="main-logo">
         </div>
 
         <p>Твій кросплатформний помічник для фітнесу та тренувань</p>
     </div>
 </header>
 
-<!-- Основний вміст сторінки -->
 <main class="container main">
-    <!-- Секція з описом застосунку -->
     <section class="card">
         <h2>Про застосунок</h2>
         <p>
@@ -37,7 +33,6 @@
         </p>
     </section>
 
-    <!-- Секція з функціями застосунку -->
     <section class="card">
         <h2>Основні функції</h2>
         <ul class="features-list">
@@ -45,16 +40,13 @@
             <li>Пошук партнерів для спільних тренувань</li>
             <li>Створення списку особистих фітнес-цілей</li>
             <li>Відстеження прогресу та видалення виконаних завдань</li>
-            <li>Адаптивний інтерфейс для мобільних пристроїв</li>
             <li>Робота у будь-якому сучасному браузері</li>
         </ul>
     </section>
 
-    <!-- Секція для додавання тренувань/цілей -->
     <section class="card">
         <h2>Додати фітнес-ціль</h2>
 
-        <!-- Поле введення -->
         <input
                 type="text"
                 id="goalInput"
@@ -62,24 +54,19 @@
                 placeholder="Наприклад: Пробігти 5 км, Сходити в зал..."
         >
 
-        <!-- Кнопка для додавання -->
         <button id="addGoalButton" class="button">
             Додати ціль
         </button>
 
-        <!-- Повідомлення для користувача -->
         <p id="message" class="message"></p>
     </section>
 
-    <!-- Секція зі списком -->
     <section class="card">
         <h2>Мої цілі на тиждень</h2>
 
-        <!-- Сюди JavaScript буде додавати нові цілі -->
         <ul id="goalsList" class="notes-list"></ul>
     </section>
 
-    <!-- Секція з вибором стека технологій -->
     <section class="card">
         <h2>Обраний стек технологій</h2>
         <p>
@@ -116,7 +103,6 @@
     </section>
 </main>
 
-<!-- Футер сторінки -->
 <footer class="footer">
     <p>Лабораторна робота 1.2: Основи кросплатформності (Фітнес-застосунок)</p>
 </footer>
