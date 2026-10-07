@@ -1,0 +1,34 @@
+### 1. Отримати всі цілі (GET)
+GET http://localhost:3000/api/goals
+
+### 2. Створити нову ціль (POST)
+POST http://localhost:3000/api/goals
+Content-Type: application/json
+
+{
+  "title": "Пробігти 5 км",
+  "description": "Підготуватись до весняного марафону",
+  "status": "В процесі"
+}
+
+### 3. Створити ціль БЕЗ назви (щоб перевірити нашого охоронця-валідатора)
+POST http://localhost:3000/api/goals
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "Ціль без назви не має пройти"
+}
+
+### 4. Оновити ціль (PUT) - замість ID_ЦІЛІ підставимо реальний ID пізніше
+PUT http://localhost:3000/api/goals/6abacc691494e77a363a481e
+Content-Type: application/json
+
+{
+  "title": "Пробігти 10 км",
+  "description": "Оновлена ціль!",
+  "status": "Виконано"
+}
+
+### 5. Видалити ціль (DELETE) - замість ID_ЦІЛІ підставимо реальний ID пізніше
+DELETE http://localhost:3000/api/goals/6abacc691494e77a363a481e
