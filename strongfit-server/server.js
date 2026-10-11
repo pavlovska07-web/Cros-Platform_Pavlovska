@@ -28,3 +28,5 @@ connectDB(process.env.MONGO_URI).then(() => {
         console.log(`Сервер запущено на порту ${PORT}`);
     });
 });
+
+
